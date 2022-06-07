@@ -2,7 +2,6 @@
 
 namespace Softspring\Component\Events;
 
-use Softspring\Component\Events\GetResponseEventInterface;
 use Symfony\Component\HttpFoundation\Response;
 
 trait DispatchGetResponseTrait
