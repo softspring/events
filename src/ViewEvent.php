@@ -20,7 +20,7 @@ class ViewEvent extends RequestEvent
             throw new \InvalidArgumentException('$data must be an ArrayObject or just an array');
         }
 
-        $data = new \ArrayObject($data);
+        $data = new ArrayObject($data);
 
         $this->data = $data;
     }
