@@ -10,10 +10,7 @@ class DispatchTraitClass
 {
     use DispatchTrait;
 
-    /**
-     * @var EventDispatcherInterface
-     */
-    protected $eventDispatcher;
+    protected ?EventDispatcherInterface $eventDispatcher;
 
     public function __construct($eventDispatcher)
     {

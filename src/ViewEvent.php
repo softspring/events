@@ -15,11 +15,13 @@ class ViewEvent extends RequestEvent
     {
         parent::__construct($request);
 
-        if (!is_array($data)) {
+        if (!$data instanceof \ArrayObject && !is_array($data)) {
             throw new \InvalidArgumentException('$data must be an ArrayObject or just an array');
         }
 
-        $data = new \ArrayObject($data);
+        if (is_array($data)) {
+            $data = new \ArrayObject($data);
+        }
 
         $this->data = $data;
     }

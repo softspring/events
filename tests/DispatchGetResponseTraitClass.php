@@ -11,10 +11,7 @@ class DispatchGetResponseTraitClass
 {
     use DispatchGetResponseTrait;
 
-    /**
-     * @var EventDispatcherInterface
-     */
-    protected $eventDispatcher;
+    protected EventDispatcherInterface $eventDispatcher;
 
     public function __construct(EventDispatcherInterface $eventDispatcher)
     {
@@ -26,14 +23,14 @@ class DispatchGetResponseTraitClass
         return $this->eventDispatcher;
     }
 
-    public function doDispatchWithResponse(string $eventName, GetResponseEventInterface $event)
+    public function doDispatchWithResponse(string $eventName, GetResponseEventInterface $event): ?Response
     {
         $event->setResponse(new Response()); // this should be added by listeners
 
         return $this->dispatchGetResponse($eventName, $event);
     }
 
-    public function doDispatchWithoutResponse(string $eventName, GetResponseEventInterface $event)
+    public function doDispatchWithoutResponse(string $eventName, GetResponseEventInterface $event): ?Response
     {
         return $this->dispatchGetResponse($eventName, $event);
     }
