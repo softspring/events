@@ -57,7 +57,7 @@ jobs:
         run: ./vendor/bin/phpunit --coverage-text --coverage-html=.phpunit.cache/html-report
 
       - name: Run phpstan
-        run: ./vendor/bin/phpunit analyse
+        run: ./vendor/bin/phpstan analyse
 
       - name: phpunit-coverage-badge
         uses: timkrase/phpunit-coverage-badge@v1.2.0
