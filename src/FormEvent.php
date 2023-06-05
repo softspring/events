@@ -12,7 +12,7 @@ class FormEvent extends Event
 
     protected FormInterface $form;
 
-    public function __construct(FormInterface $form, ?Request $request = null)
+    public function __construct(FormInterface $form, Request $request = null)
     {
         $this->form = $form;
         $this->request = $request;
