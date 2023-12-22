@@ -11,7 +11,7 @@ class ViewEvent extends RequestEvent
     /**
      * @param \ArrayObject|array $data
      */
-    public function __construct($data, Request $request = null)
+    public function __construct($data, protected ?Request $request = null)
     {
         parent::__construct($request);
 
