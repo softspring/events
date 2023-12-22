@@ -7,11 +7,8 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class RequestEvent extends Event
 {
-    protected ?Request $request;
-
-    public function __construct(?Request $request)
+    public function __construct(protected ?Request $request)
     {
-        $this->request = $request;
     }
 
     public function getRequest(): ?Request
