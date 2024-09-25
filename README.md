@@ -1,11 +1,11 @@
 # Events component
 
-[![Latest Stable Version](https://poser.pugx.org/softspring/events/v/stable.svg)](https://packagist.org/packages/softspring/events)
-[![Latest Unstable Version](https://poser.pugx.org/softspring/events/v/unstable.svg)](https://packagist.org/packages/softspring/events)
-[![License](https://poser.pugx.org/softspring/events/license.svg)](https://packagist.org/packages/softspring/events)
-[![PHP Version Require](http://poser.pugx.org/softspring/events/require/php)](https://packagist.org/packages/softspring/events)
-[![Total Downloads](https://poser.pugx.org/softspring/events/downloads)](https://packagist.org/packages/softspring/events)
-[![Build status](https://github.com/softspring/events/actions/workflows/php.yml/badge.svg?branch=5.3)](https://github.com/softspring/events/actions/workflows/php.yml)
+![Latest Stable](https://img.shields.io/packagist/v/softspring/events?label=stable&style=flat-square)
+![Latest Unstable](https://img.shields.io/packagist/v/softspring/events?label=unstable&style=flat-square&include_prereleases)
+![License](https://img.shields.io/packagist/l/softspring/events?style=flat-square)
+![PHP Version](https://img.shields.io/packagist/dependency-v/softspring/events/php?style=flat-square)
+![Downloads](https://img.shields.io/packagist/dt/softspring/events?style=flat-square)
+[![CI](https://img.shields.io/github/actions/workflow/status/softspring/events/php.yml?branch=5.3&style=flat-square&label=CI)](https://github.com/softspring/events/actions/workflows/php.yml)
 ![Coverage](https://raw.githubusercontent.com/softspring/events/5.3/.github/badges/coverage.svg)
 
 Adds some general facilities and extra features to Symfony projects.
