@@ -5,8 +5,8 @@
 ![License](https://img.shields.io/packagist/l/softspring/events?style=flat-square)
 ![PHP Version](https://img.shields.io/packagist/dependency-v/softspring/events/php?style=flat-square)
 ![Downloads](https://img.shields.io/packagist/dt/softspring/events?style=flat-square)
-[![CI](https://img.shields.io/github/actions/workflow/status/softspring/events/php.yml?branch=5.3&style=flat-square&label=CI)](https://github.com/softspring/events/actions/workflows/php.yml)
-![Coverage](https://raw.githubusercontent.com/softspring/events/5.3/.github/badges/coverage.svg)
+[![CI](https://img.shields.io/github/actions/workflow/status/softspring/events/php.yml?branch=5.4&style=flat-square&label=CI)](https://github.com/softspring/events/actions/workflows/php.yml)
+![Coverage](https://raw.githubusercontent.com/softspring/events/5.4/.github/badges/coverage.svg)
 
 Adds some general facilities and extra features to Symfony projects.
 
