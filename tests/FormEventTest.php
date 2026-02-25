@@ -10,7 +10,7 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class FormEventTest extends TestCase
 {
-    public function testInterfaces()
+    public function testInterfaces(): void
     {
         $formFactory = Forms::createFormFactory();
         $form = $formFactory->create();
@@ -19,7 +19,7 @@ class FormEventTest extends TestCase
         $this->assertInstanceOf(Event::class, $event);
     }
 
-    public function testGetForm()
+    public function testGetForm(): void
     {
         $formFactory = Forms::createFormFactory();
         $form = $formFactory->create();
@@ -28,7 +28,7 @@ class FormEventTest extends TestCase
         $this->assertEquals($form, $event->getForm());
     }
 
-    public function testGetRequest()
+    public function testGetRequest(): void
     {
         $formFactory = Forms::createFormFactory();
         $form = $formFactory->create();

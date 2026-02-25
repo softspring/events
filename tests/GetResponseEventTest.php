@@ -10,7 +10,7 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class GetResponseEventTest extends TestCase
 {
-    public function testInterfaces()
+    public function testInterfaces(): void
     {
         $event = new GetResponseEvent();
 
@@ -18,7 +18,7 @@ class GetResponseEventTest extends TestCase
         $this->assertInstanceOf(Event::class, $event);
     }
 
-    public function testGetResponse()
+    public function testGetResponse(): void
     {
         $event = new GetResponseEvent();
 

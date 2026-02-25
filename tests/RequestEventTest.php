@@ -9,7 +9,7 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class RequestEventTest extends TestCase
 {
-    public function testInterfaces()
+    public function testInterfaces(): void
     {
         $request = new Request();
         $event = new RequestEvent($request);
@@ -17,7 +17,7 @@ class RequestEventTest extends TestCase
         $this->assertInstanceOf(Event::class, $event);
     }
 
-    public function testGetRequest()
+    public function testGetRequest(): void
     {
         $request = new Request();
         $event = new RequestEvent($request);

@@ -12,7 +12,7 @@ class DispatchTraitClass
 
     protected ?EventDispatcherInterface $eventDispatcher;
 
-    public function __construct($eventDispatcher)
+    public function __construct(?EventDispatcherInterface $eventDispatcher)
     {
         $this->eventDispatcher = $eventDispatcher;
     }
@@ -22,7 +22,7 @@ class DispatchTraitClass
         return $this->eventDispatcher;
     }
 
-    public function doDispatch(string $eventName, Event $event)
+    public function doDispatch(string $eventName, Event $event): void
     {
         $this->dispatch($eventName, $event);
     }

@@ -12,7 +12,7 @@ trait DispatchGetResponseTrait
     {
         $this->dispatch($eventName, $event);
 
-        if ($event->getResponse()) {
+        if ($event->getResponse() instanceof Response) {
             return $event->getResponse();
         }
 

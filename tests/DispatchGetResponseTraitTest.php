@@ -9,7 +9,7 @@ use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 
 class DispatchGetResponseTraitTest extends TestCase
 {
-    public function testWithResponse()
+    public function testWithResponse(): void
     {
         $eventDispatcher = $this->createMock(EventDispatcherInterface::class);
         $eventDispatcher->expects($this->once())->method('dispatch');
@@ -18,7 +18,7 @@ class DispatchGetResponseTraitTest extends TestCase
         $this->assertInstanceOf(Response::class, $response);
     }
 
-    public function testWithoutResponse()
+    public function testWithoutResponse(): void
     {
         $eventDispatcher = $this->createMock(EventDispatcherInterface::class);
         $eventDispatcher->expects($this->once())->method('dispatch');
