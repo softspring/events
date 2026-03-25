@@ -3,7 +3,6 @@
 namespace Softspring\Component\Events\Tests;
 
 use Softspring\Component\Events\DispatchTrait;
-use Symfony\Contracts\EventDispatcher\Event;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 
 class DispatchTraitClass
@@ -22,7 +21,7 @@ class DispatchTraitClass
         return $this->eventDispatcher;
     }
 
-    public function doDispatch(string $eventName, Event $event): void
+    public function doDispatch(string $eventName, object $event): void
     {
         $this->dispatch($eventName, $event);
     }

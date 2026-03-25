@@ -13,7 +13,7 @@
     </testsuites>
 
     <!-- Coverage filter -->
-    <source>
+    <source ignoreIndirectDeprecations="true">
         <include>
             <directory>src</directory>
         </include>

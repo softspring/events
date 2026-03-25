@@ -1,14 +1,14 @@
 # Events
 
-![Latest Stable](https://img.shields.io/packagist/v/softspring/events?label=stable&style=flat-square)
-![Latest Unstable](https://img.shields.io/packagist/v/softspring/events?label=unstable&style=flat-square&include_prereleases)
-![License](https://img.shields.io/packagist/l/softspring/events?style=flat-square)
-![PHP Version](https://img.shields.io/packagist/dependency-v/softspring/events/php?style=flat-square)
-![Downloads](https://img.shields.io/packagist/dt/softspring/events?style=flat-square)
+[![Latest Stable](https://img.shields.io/packagist/v/softspring/events?label=stable&style=flat-square)](https://github.com/softspring/events/releases)
+[![Latest Unstable](https://img.shields.io/packagist/v/softspring/events?label=unstable&style=flat-square&include_prereleases)](https://github.com/softspring/events/releases)
+[![License](https://img.shields.io/packagist/l/softspring/events?style=flat-square)](https://github.com/softspring/events/blob/6.0/LICENSE)
+[![PHP Version](https://img.shields.io/packagist/dependency-v/softspring/events/php?style=flat-square)](https://github.com/softspring/events/blob/6.0/composer.json)
+[![Downloads](https://img.shields.io/packagist/dt/softspring/events?style=flat-square)](https://packagist.org/packages/softspring/events)
 [![CI](https://img.shields.io/github/actions/workflow/status/softspring/events/ci.yml?branch=6.0&style=flat-square&label=CI)](https://github.com/softspring/events/actions/workflows/ci.yml)
-![Coverage](https://raw.githubusercontent.com/softspring/events/6.0/.github/badges/coverage.svg)
+[![Coverage](https://img.shields.io/codecov/c/github/softspring/events?branch=6.0&style=flat-square)](https://codecov.io/gh/softspring/events)
 
-This component provides some useful event classes to use with Symfony
+This component provides shared event classes and event-dispatch helper traits for Symfony projects.
 
 ## Armonic
 
@@ -20,13 +20,7 @@ This package is part of [Armonic](https://softspring.es/en/armonic).
 
 ## Contributing
 
-Use the standard package commands before sending changes:
-
-```bash
-composer fix
-composer test
-composer test-bc
-```
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 [Report issues](https://github.com/softspring/events/issues) and [send Pull Requests](https://github.com/softspring/events/pulls)
 
