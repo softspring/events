@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Softspring\Component\Events;
 
 use Symfony\Component\Form\FormInterface;
