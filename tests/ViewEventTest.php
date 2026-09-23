@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Softspring\Component\Events\Tests;
 
 use ArrayObject;
-use InvalidArgumentException;
-use stdClass;
 use PHPUnit\Framework\TestCase;
 use Softspring\Component\Events\ViewEvent;
 use Symfony\Contracts\EventDispatcher\Event;

@@ -60,6 +60,9 @@ jobs:
             -   name: Run rector
                 run: ./vendor/bin/rector process src tests --dry-run
 
+            -   name: Lint YAML in .github
+                run: ./vendor/bin/yaml-lint .github/ -vvv --parse-tags
+
             -   name: Upload coverage to Codecov
                 uses: codecov/codecov-action@v6
                 with:
